@@ -1,68 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Go Shoes
 
-## Available Scripts
+Projeto e-commerce de vendas de tênis, desenvolvido em ReactJS aplicando Arquitetura Flux com Redux para demonstrar a funcionalidade dessa Arquitetura.
 
-In the project directory, you can run:
+## O que é [Redux](https://redux.js.org/)?
 
-### `npm start`
+- Biblioteca que implementa Arquitetura Flux;
+- Controle de estados globais;
+- Quando utilizar o Redux?
+  - Quando meu estado tem mais de um “dono”
+  - Quando meu estado é manipulado por mais componentes
+  - Quando as ações do usuário causam efeitos colaterais nos dados
+  - Exemplos: Carrinho de compras, dados do usuário, player de música, etc;
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Ferramenta de API FAKE
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Foi utilizado como API [JSON Server](https://github.com/typicode/json-server) uma biblioteca que permite utilizar um arquivo JSON e criar uma API apartir desse arquivo.
 
-### `npm test`
+#### JSON Server
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para utilizar no terminal ou prompt de comando dentro do diretório do projeto digite:
 
-### `npm run build`
+`json-server server.json -p 3333 -w`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+onde:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- `json-server` comando para executar a biblioteca
+- `server.json` parametro passando qual arquivo possui a estrutura JSON da API
+- `-p 3333` parametro que passa qual porta o JSON Server será inicializado.
+- `-w` parametro que ficará observando alteração no arquivo JSON e sendo assim quando houver, irá ser restartado o JSON Server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Ferramentas de análise de código estático:
 
-### `npm run eject`
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Style Guide utilizada:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
