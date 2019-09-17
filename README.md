@@ -14,7 +14,7 @@ Projeto e-commerce de vendas de tênis, desenvolvido em ReactJS aplicando Arquit
 
 ### Ferramenta de API FAKE
 
-Foi utilizado como API [JSON Server](https://github.com/typicode/json-server) uma biblioteca que permite utilizar um arquivo JSON e criar uma API apartir desse arquivo.
+Foi utilizado como API [JSON Server](https://github.com/typicode/json-server) uma biblioteca que permite utilizar um arquivo JSON e criar uma API a partir desse arquivo.
 
 #### JSON Server
 
